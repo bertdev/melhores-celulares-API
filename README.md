@@ -1,4 +1,4 @@
-## Melhor Celulares API 
+## Melhores Celulares API 
 
 > Status: em desenvolvimento ⚠️
 
