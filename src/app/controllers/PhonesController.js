@@ -10,6 +10,7 @@ class PhonesController {
   async index(request, response) {
     const phones = await PhonesRepository.findAll();
 
+    response.send('<h1> amigo estou aqui</h1>');
     response.send(phones);
   }
 
