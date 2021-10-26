@@ -1,4 +1,4 @@
-const { v4 } = require('uuid');
+const { v4, stringify } = require('uuid');
 const PhonesRepository = require('../repositories/PhonesRepository');
 
 const isTextValid = require('../helpers/isTextValid');
@@ -8,7 +8,6 @@ const formatDateToStore = require('../helpers/formatDateToStore');
 
 class PhonesController {
   async index(request, response) {
-    // response.send('<h1> amigo estou aqui</h1>');
     const phones = await PhonesRepository.findAll();
 
     response.send(phones);

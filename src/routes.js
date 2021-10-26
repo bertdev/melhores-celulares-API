@@ -3,9 +3,6 @@ const PhonesController = require('./app/controllers/PhonesController');
 
 const router = express();
 
-router.get('/', (request, response) => {
-  response.send('<h1> amigo estou aqui</h1>');
-})
 router.get('/phones', PhonesController.index);
 router.get('/phones/:code', PhonesController.show);
 router.post('/phones', PhonesController.store);
