@@ -1,0 +1,12 @@
+CREATE DATABASE melhorCelular;
+
+CREATE TABLE IF NOT EXISTS phones (
+  model VARCHAR NOT NULL,
+  price DECIMAL NOT NULL,
+  brand VARCHAR NOT NULL,
+  startdate DATE NOT NULL,
+  enddate DATE NOT NULL,
+  color VARCHAR NOT NULL,
+  code VARCHAR(8) UNIQUE NOT NULL
+);
+
