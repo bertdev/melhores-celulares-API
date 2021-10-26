@@ -11,7 +11,7 @@ Com essa API é possível realizar as seguintes operações:
 
 #### Tecnologias - ⚙️
 
-Desenvolvida utilizando ```Node``` + ```Express``` e ```PostgreSql``` como base de dados. Usamos a lib ```pg``` para fazer coneção com o baco de dados, ```uuid``` para gerar o code do cadastro e ```Dotenv``` para o controle de váriaveis de ambiente.
+Desenvolvida utilizando ```Node```,```Express``` e ```PostgreSql``` como base de dados. Usamos a lib ```pg``` para fazer conexão com o baco de dados, ```uuid``` para gerar o code do cadastro e ```Dotenv``` para o controle de váriaveis de ambiente.
 
 |Tech|Versão|
 |----|------|
@@ -47,7 +47,9 @@ A API se encontra hospedada então pode consumir seguindo a seguinte tabela:
 ```
 
 **⚠️ Importante:**
-O atributo ```code``` será gerado automáticamente pela API no momento de criação do cadastro, logo não é necessário passá-lo no body.
+
+O atributo ```code``` será gerado automáticamente pela API no momento de criação do cadastro, logo, não é necessário passá-lo no body.
+
 Para saber qual o code de um cadastro especifico faça uma requisição de listagem de todos os cadastros. Cada cadastro será listado com seu atributo ```code``` como no exemplo abaixo:
 ```
 {
