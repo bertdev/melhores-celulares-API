@@ -8,9 +8,9 @@ const formatDateToStore = require('../helpers/formatDateToStore');
 
 class PhonesController {
   async index(request, response) {
+    response.send('<h1> amigo estou aqui</h1>');
     const phones = await PhonesRepository.findAll();
 
-    response.send('<h1> amigo estou aqui</h1>');
     response.send(phones);
   }
 
